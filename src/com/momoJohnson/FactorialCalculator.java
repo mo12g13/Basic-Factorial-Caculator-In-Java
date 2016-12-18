@@ -9,6 +9,7 @@ import java.text.DecimalFormat;
 /**
  * Created by Momo Johnson on 9/18/2016.
  */
+//Setting up of the JFrame
 public class FactorialCalculator extends JFrame {
     private JTextField txtNumberInput;
     private JTextField txtFactorialCalculatedField;
@@ -31,7 +32,7 @@ public class FactorialCalculator extends JFrame {
 
 
 
-        //A button that clear form
+        //A button that clears the  form
         btnClear.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -50,7 +51,7 @@ public class FactorialCalculator extends JFrame {
             }
         });
 
-        //A button that exit the form
+        //A Event handler that exits the form
         btnExit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -83,7 +84,7 @@ public class FactorialCalculator extends JFrame {
 
         });
     }
-    //A method that cheks for a valid integer enter by the user
+    //A method that checks for a valid integer entered by the user
     private  boolean isInteger(JTextField textField, String name) {
 
         try{
@@ -103,17 +104,7 @@ public class FactorialCalculator extends JFrame {
             return false;
         }
     }
-
-
-
-
-
-
-
-
-
-
-
+    // A method that checks to make sure that the text box is not empty
     private  boolean isPresent(JTextField textField, String name){
         if(textField.getText().equals("")){
             JOptionPane.showMessageDialog(this.rootPane, name+
@@ -128,7 +119,7 @@ public class FactorialCalculator extends JFrame {
 
 
     }
-
+    // A method that checks to make sure that all entry are valid
     private boolean isValidData(){
         if(!isPresent(txtNumberInput, "Number")){
             return  false;
