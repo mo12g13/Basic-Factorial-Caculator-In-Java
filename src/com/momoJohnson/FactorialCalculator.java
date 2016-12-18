@@ -32,7 +32,7 @@ public class FactorialCalculator extends JFrame {
 
 
 
-        //A button that clears the  form
+        //A event handler that clears the  form
         btnClear.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -65,7 +65,7 @@ public class FactorialCalculator extends JFrame {
             }
         });
 
-
+        //An event handler that calculates the number entered by the user
         calculate.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
